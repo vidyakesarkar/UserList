@@ -1,0 +1,192 @@
+/* UserList.css */
+
+/* Main container for the user list */
+.user-list-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling within the user list container */
+.user-list-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+/* Filters container styling */
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Filter labels styling */
+.filters label {
+    margin-right: 20px;
+    font-size: 1rem;
+    color: #555;
+    display: flex;
+    align-items: center;
+}
+
+/* Common styles for select dropdown and text input fields */
+.filter-select, .filter-input {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+/* Specific width for the select dropdown */
+.filter-select {
+    width: 150px;
+}
+
+/* Specific width for the text input field */
+.filter-input {
+    width: 200px;
+}
+
+/* Table styling */
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Table header and cell styling */
+.user-table th, .user-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Table header specific styles */
+.user-table th {
+    cursor: pointer;
+    background-color: #f4f4f4;
+    color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-bottom: 2px solid #ddd;
+    font-weight: bold;
+}
+
+/* Styling for alternating table row backgrounds */
+.user-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Styling for odd table row backgrounds */
+.user-table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+/* Hover effect for table rows */
+.user-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Add padding and background color to table rows */
+.user-table tr {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* User image styling */
+.user-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+/* Add subtle shadow to user images for a polished look */
+.user-image {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Add a slight hover effect to table rows */
+.user-table tr:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.02);
+}
+
+/* Add rounded corners to table rows */
+.user-table tr {
+    cursor: pointer;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* Add a subtle border to table cells */
+.user-table td {
+    border-left: 1px solid #ddd;
+}
+
+/* Ensure that the last row does not have a bottom border */
+.user-table tr:last-child td {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .filters {
+        flex-direction: column;
+        align-items: flex-start;
+        border-bottom: none;
+        box-shadow: none;
+        padding: 10px;
+    }
+
+    .filter-select, .filter-input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .user-table th, .user-table td {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
+
+/* Add styling for the filter inputs' focus state */
+.filter-select:focus, .filter-input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Add padding and background color to table headers */
+.user-table th {
+    padding: 15px;
+    background-color: #f4f4f4;
+}
+
+/* Add a subtle hover effect to table headers */
+.user-table th:hover {
+    background-color: #e0e0e0;
+}
+
+/* Improved button focus state */
+.next-button:focus {
+    outline: 2px solid #0056b3;
+    outline-offset: 2px;
+}
